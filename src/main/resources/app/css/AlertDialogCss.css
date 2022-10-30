@@ -1,0 +1,50 @@
+/*
+    -Color designs:
+    Primary -> #5e7691 (buttons)
+    Darker-Primary -> #415469 (top-pane)
+    Secondary -> #8c9eb5 (highlights)
+    Background -> #202d3c
+    Font -> #ffffff
+
+    . -> component name
+    # -> component id
+*/
+
+/*
+Alert customization
+*/
+.dialog-pane{
+  -fx-border-color:white;
+  -fx-border-width:1px;
+ }
+
+.dialog-pane > .button-bar > .container {
+  -fx-background-color: #202d3c;
+}
+
+.dialog-pane > .content.label {
+   -fx-background-color: #202d3c;
+   -fx-text-fill:white;
+   -fx-font-size:15.0px;
+   -fx-font-family: Roboto Light;
+}
+
+.dialog-pane:header .header-panel {
+  -fx-background-color: #415469;
+}
+
+.dialog-pane:header .header-panel .label{
+  -fx-text-fill:white;
+  -fx-font-size:18.0px;
+  -fx-font-family: Roboto Thin;
+}
+
+.dialog-pane .button{
+   -fx-background-color: #5e7691;
+   -fx-text-fill:white;
+   -fx-font-family: Roboto Light;
+ }
+
+.dialog-pane .button:hover{
+  -fx-background-color: #8c9eb5;
+ }
