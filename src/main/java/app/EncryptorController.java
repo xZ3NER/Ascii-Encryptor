@@ -23,6 +23,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -287,4 +288,13 @@ public class EncryptorController implements Initializable {
         component.setEffect(null);
     }
 
+    @FXML
+    public void openHelpHandler(MouseEvent mouseEvent) {
+        try {
+            String path = new File("").getAbsolutePath()+"\\src\\main\\java\\app\\help\\\"Ascii Encryptor User Guide (ES).pdf\"";
+            new ProcessBuilder("cmd","/C",path).start();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

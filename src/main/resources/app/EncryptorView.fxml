@@ -107,4 +107,12 @@
          </font>
       </Label>
    </Pane>
+   <Label layoutX="455.0" layoutY="172.0" onMouseClicked="#openHelpHandler" text="¿Need help? Click me!" textFill="WHITE">
+      <font>
+         <Font name="Roboto Light" size="15.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Label>
 </AnchorPane>
